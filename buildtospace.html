@@ -24,10 +24,10 @@
         <h1>Build to Space</h1>
         <h3>Sci-fi sandbox game</h3>
         <div class="button-row">
-          <button class = "round-button primary-button-color hover-float" onclick="window.location.href='buildtospace.html'">
+          <button class = "round-button primary-button-color hover-float" onclick="openGamePage()">
             Play
           </button>
-          <button class = "round-button secondary-button-color hover-float" onclick="window.location.href='buildtospace.html'">
+          <button class = "round-button secondary-button-color hover-float" onclick="openSourceCode()">
             Source code 
           </button>
         </div>
@@ -47,6 +47,26 @@
       </section>
       <section class="section">
         <div>
+          <div class="tag-container">
+            <div class="tag" style="background-color: #4E86DB">Unity</div>
+            <div class="tag" style="background-color: #678E45">C#</div>
+            <div class="tag" style="background-color: #808080">Team</div>
+          </div>
+          <p>
+            A student team project with UCI's Video Game Development Club (VGDC).
+            <ul>
+              <li><b>Roles: </b>Team Lead, Programmer, Gameplay Designer</li>
+              <li><b>Software: </b>Unity, C#, Git, Github</li>
+              <li><b>Team size: </b>7-15</li>
+              <li><b>Genres: </b>Sci-fi, sandbox, adventure</li>
+              <li><b>Platform: </b>PC</li>
+              <li><b>Dates: </b>Jan 2024 - June 2024</li>
+            </ul> 
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div>
           <h2>Programming Contributions</h2>
           <ul>
             <li>Collaborated with other programmers using Git version control (GitHub)</li>
@@ -58,10 +78,10 @@
             <li>Developed an adaptable grid building class enabling players to build freely on terrain or on any spaceship, regardless of its orientation.</li>
           </ul>
         </div>
-        <img src="BuildtoSpaceThumbnail.png" alt="">
+        <img src="BuildToSpace/BuildToSpaceShipBuilding.PNG" alt="">
       </section>
       <section class="section">
-        <img src="BuildtoSpaceThumbnail.png" alt="">
+        <img src="BuildToSpace/BuildToSpaceMining.PNG" alt="">
         <div>
           <h5>Inventory management</h5>
           <ul>
@@ -83,23 +103,52 @@
             <li>Utilized Unity's blend trees to create seamless animation transitions.</li>
           </ul>
         </div>
-        <img src="BuildtoSpaceThumbnail.png" alt="">
+        <img src="BuildToSpace/BuildToSpaceCharacterCustom.PNG" alt="">
+      </section>
+      <section class="section">
+        <div>
+          <h2>Team lead Responsibilities</h2>
+          <ul>
+            <li>Spearheaded cross-functional team collaboration (programming, art, game design, UI/UX, writing, audio) to ensure a unified game experience</li>
+            <li>Facilitated effective communication through hybrid meetings and online tools like Discord</li>
+            <li>Channeled Agile methodology using week-long sprints and regular team meetings</li>
+            <li>Utilized a Kanban board in Trello to manage project tasks and efficiently track progress</li>
+          </ul> 
+        </div>
+      </section>
+      <section class="section">
+        <div>
+          <h2>Other Contributions</h2>
+          <ul>
+            <li>Devised the initial creative vision for the game and collaborated with designers to develop game mechanics and UI concepts</li>
+            <li>Facilitated effective communication through hybrid meetings and online tools like Discord</li>
+            <li>When needed, contributed to the creation of pixel art assets, including characters, animations, enemies, terrain, and UI elements</li>
+          </ul> 
+        </div>
+      </section>
+      <section class="section">
+        <div>
+          <h2>Background</h2>
+          <p>
+            &emsp;<i>Build to Space</i> began as a personal exploration of the building genre. Inspired to combine the building mechanics of Kerbal Space Program, Bad Piggies, and Roblox's Build a Boat For Treasure, I envisioned a game where players could construct and customize everything from spaceships to defensive structures, vehicles, and factories. 
+          </p>
+          <p>
+            &emsp;Taking the lead within UCI's Video Game Development Club for two quarters, I transformed my initial prototype into a collaborative project. We worked together to develop the core building and piloting systems, allowing players to unleash their creativity as they conquer the challenges of reaching space.
+          </p>
+          <p>
+            &emsp;As the project remains ongoing, I will continue to work on the game individually. My focus will be on expanding building features and refining existing gameplay to ensure an engaging and immersive experience.
+          </p>
+        </div>
       </section>
     </main>
-    <footer id="contact-section">
-      <h4 style="text-align: center;" >Connect with me</h4>
-      <div class="footer-buttons">
-        <a href="https://www.linkedin.com/in/alexa-ramz" target="_blank" class = "contact-button hover-increase">
-          <img src="LinkedInIcon.png" alt="A LinkedIn icon">
-        </a>
-        <a href="https://github.com/AlexaRamz" target="_blank" class = "contact-button hover-increase">
-          <img src="GithubIcon.png" alt="A Github icon">
-        </a>
-        <a href="">
-          <img src="EmailIcon.png" alt="An email icon" class = "contact-button hover-increase">
-        </a>
-      </div>
-    </footer>
-    <!-- <script src="myscripts.js"></script> -->
+    <script src="footer.js"></script>
+    <script>
+      function openGamePage() {
+        window.open("https://alexaramz.itch.io/build-to-space-vgdc");
+      }
+      function openSourceCode() {
+        window.open("https://github.com/AlexaRamz/build-to-space-vgdc");
+      }
+    </script>
   </body>
 </html>

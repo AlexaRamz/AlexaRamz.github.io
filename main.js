@@ -2,19 +2,21 @@
 let projectList = [
   {
     name: "Build to Space",
-    image: "BuildtoSpaceThumbnail.png",
+    image: "BuildToSpace/BuildtoSpaceThumbnail.png",
     altText: "",
     dates: "Jan - June 2024",
     roles: "Project Lead & Programmer",
-    description: "A sci-fi sandbox game I led and developed as part of UCI's Video Game Development Club. Build and pilot your very own spacecraft to escape post-apocalyptic Earth and begin your journey through space. Explore intricate procedurally generated caves to mine for materials, and defend against monsters using laser weapons."
+    description: "A sci-fi sandbox game I led and developed as part of UCI's Video Game Development Club. Build and pilot your very own spacecraft to escape post-apocalyptic Earth and begin your journey through space. Explore intricate procedurally generated caves to mine for materials, and defend against monsters using laser weapons.",
+    tags: ["Unity", "C#", "Team"],
   },
   {
     name: "Coffee's Brew",
-    image: "CoffeesBrewThumbnail.png",
+    image: "CoffeesBrew/CoffeesBrewThumbnail.png",
     altText: "A cat character holds an unbaked cupcake in a cafe kitchen, ready to place it in a nearby oven.",
     dates: "Oct 2021 - (Ongoing)",
     roles: "",
-    description: "This ongoing personal project is a cooking and potion-brewing role-playing video game where you build and manage your own coffee shop while brewing magic potions to battle monsters."
+    description: "This ongoing personal project is a cooking and potion-brewing role-playing video game where you build and manage your own coffee shop while brewing magic potions to battle monsters.",
+    tags: ["Unity", "C#"],
   },
   {
     name: "Beep Boop's Puzzle Adventure",
@@ -22,20 +24,40 @@ let projectList = [
     altText: "A robot stands on a button that is rotating a wire on the path between a battery and a lightbulb.",
     dates: "Oct - Dec 2022",
     roles: "Team Lead, Programmer",
-    description: "An electricity-based top-down puzzle game I led and developed as part of UCI's Video Game Development Club. Control a maintenance robot to fix and return power to all of the lightbulbs!"
+    description: "An electricity-based top-down puzzle game I led and developed as part of UCI's Video Game Development Club. Control a maintenance robot to fix and return power to all of the lightbulbs!",
+    tags: ["Unity", "C#", "Team"]
   }
 ];
+
+let tagColors = {
+  "Unity": "#4E86DB",
+  "C#": "#678E45",
+  "Team": "#808080", 
+}
+
+function createTag(tagName) {
+  return `
+    <div class="tag" style="background-color: ${tagColors[tagName]}">${tagName}</div>
+  `;
+}
+
+function createTags(tagNames) {
+  tags = ``;
+  for (const tagName of tagNames) {
+    tags += createTag(tagName);
+  }
+  return tags;
+}
 
 function createProjectCardStyle1(project) {
   return `
     <article class="project-card project-card-blue">
-      <img src="${project.image}" alt=${project.altText}>
+      <img src="${project.image}" alt="${project.altText}">
       <div class="project-desc">
         <div>
           <h2>${project.name}</h2>
           <div class="tag-container">
-            <div class="tag" style="background-color: #678E45">C#</div>
-            <div class="tag" style="background-color: #4E86DB">Unity</div>
+            ${createTags(project.tags)}
           </div>
           <p>
             ${project.description}
@@ -58,8 +80,7 @@ function createProjectCardStyle2(project) {
         <div>
           <h2>${project.name}</h2>
           <div class="tag-container">
-            <div class="tag" style="background-color: #678E45">C#</div>
-            <div class="tag" style="background-color: #4E86DB">Unity</div>
+            ${createTags(project.tags)}
           </div>
           <p>
             ${project.description}
@@ -71,7 +92,7 @@ function createProjectCardStyle2(project) {
           </button>
         </div>
       </div>
-      <img src="${project.image}" alt=${project.altText}>
+      <img src="${project.image}" alt="${project.altText}">
     </article>
   `;
 }
@@ -86,5 +107,6 @@ for (let i = 0; i < projectList.length; i++) {
   else {
     tempContainer.innerHTML = createProjectCardStyle2(projectList[i]);
   }
+
   parentProjects.appendChild(tempContainer);
 }
