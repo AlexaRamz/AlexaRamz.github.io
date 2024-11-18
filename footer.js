@@ -17,6 +17,6 @@ function createFooter() {
   `;
 }
 
-const tempContainer = document.createElement('div');
-tempContainer.innerHTML = createFooter();
-document.body.append(tempContainer); 
+const footerContainer = document.createElement('div');
+footerContainer.innerHTML = createFooter();
+document.body.append(footerContainer); 

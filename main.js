@@ -8,6 +8,7 @@ let projectList = [
     roles: "Project Lead & Programmer",
     description: "A sci-fi sandbox game I led and developed as part of UCI's Video Game Development Club. Build and pilot your very own spacecraft to escape post-apocalyptic Earth and begin your journey through space. Explore intricate procedurally generated caves to mine for materials, and defend against monsters using laser weapons.",
     tags: ["Unity", "C#", "Team"],
+    pageSource: "build_to_space.html"
   },
   {
     name: "Coffee's Brew",
@@ -17,15 +18,37 @@ let projectList = [
     roles: "",
     description: "This ongoing personal project is a cooking and potion-brewing role-playing video game where you build and manage your own coffee shop while brewing magic potions to battle monsters.",
     tags: ["Unity", "C#"],
+    pageSource: "coffees_brew.html"
   },
   {
     name: "Beep Boop's Puzzle Adventure",
-    image: "BeepBoopPuzzleAnimatedThumbnail.gif",
+    image: "BeepBoopPuzzle/BeepBoopPuzzleAnimatedThumbnail.gif",
     altText: "A robot stands on a button that is rotating a wire on the path between a battery and a lightbulb.",
     dates: "Oct - Dec 2022",
     roles: "Team Lead, Programmer",
     description: "An electricity-based top-down puzzle game I led and developed as part of UCI's Video Game Development Club. Control a maintenance robot to fix and return power to all of the lightbulbs!",
-    tags: ["Unity", "C#", "Team"]
+    tags: ["Unity", "C#", "Team"],
+    pageSource: "beep_boop_puzzle.html"
+  },
+  {
+    name: "Shrouded Moon",
+    image: "ShroudedMoon/ShroudedMoonThumbnail.png",
+    altText: "",
+    dates: "Oct - Dec 2023",
+    roles: "Programmer",
+    description: "A Japanese folklore-inspired 2D action-platformer that I developed with other members of UCI's Video Game Design Club. This project allowed me to gain experience implementing simple AI and other features for game enemies.",
+    tags: ["Unity", "C#", "Team"],
+    pageSource: "shrouded_moon.html"
+  },
+  {
+    name: "Wild Lasers",
+    image: "WildLasers/WildLasersThumbnail.png",
+    altText: "",
+    dates: "April - June 2022",
+    roles: "Team Lead, Programmer, Artist",
+    description: "A wild west and sci-fi themed plaformer-shooter I led and developed as part of UCI's Video Game Design Club. Shoot your laser rifle to launch yourself through the air and defeat all enemies to get through the level!",
+    tags: ["Unity", "C#", "Team"],
+    pageSource: "wild_lasers.html"
   }
 ];
 
@@ -64,7 +87,7 @@ function createProjectCardStyle1(project) {
           </p>
         </div>
         <div class="button-container">
-          <button class = "outline-button outline-button-blue hover-float" onclick="window.location.href='buildtospace.html'">
+          <button class = "outline-button outline-button-blue hover-float" onclick="window.location.href='${project.pageSource}'">
             More Info →
           </button>
         </div>
@@ -87,7 +110,7 @@ function createProjectCardStyle2(project) {
           </p>
         </div>
         <div class="button-container">
-          <button class = "outline-button outline-button-gray hover-float" onclick="window.location.href='buildtospace.html'">
+          <button class = "outline-button outline-button-gray hover-float" onclick="window.location.href='${project.pageSource}'">
             More Info →
           </button>
         </div>
