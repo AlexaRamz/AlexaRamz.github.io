@@ -1,7 +1,7 @@
-function createFooter() {
+function createNav() {
   return `
     <div class="top-bar">
-      <div class="logo-text">AR</div>
+      <div class="logo-text">Alexandra Ramirez</div>
       <nav>
         <a href="index.html">Home</a>
         <a href="#projects-section">Projects</a>
@@ -12,5 +12,6 @@ function createFooter() {
 }
 
 const navContainer = document.createElement('div');
-navContainer.innerHTML = createFooter();
-document.body.prepend(navContainer); 
+navContainer.innerHTML = createNav();
+const navHeader = document.getElementById('nav-header');
+navHeader.insertBefore(navContainer, navHeader.firstChild);

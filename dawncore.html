@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Build to Space</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="nav-header">
+      <header class="project-header">
+        <img src="ThemeImage.png" alt="">
+        <div class="header-content">
+          <h1>Dawncore</h1>
+          <h3>First-person horde shooter</h3>
+          <div class="button-row">
+            <button class = "round-button primary-button-color hover-float" onclick="openDocument()">
+              Design Document
+            </button>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="project-sections">
+      <section>
+        <!--
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="Dawncore/DawncoreThumbnail.jpg" alt="" style="width:100%">
+          </div>
+          <div class="slide fade">
+            <img src="Dawncore/DawncoreThumbnail.jpg" alt="" style="width:100%">
+          </div>
+          <div class="slide fade">
+            <img src="Dawncore/DawncoreThumbnail.jpg" alt="" style="width:100%">
+          </div>
+  
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+  
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+        -->
+        <!--<div class="video-container">
+          <iframe src="https://www.youtube.com/embed/1HCXRNaKzXQ"></iframe>
+        </div>-->
+        <img src="Dawncore/DawncoreThumbnail.jpg" alt="">
+        <div>
+          <h2>Return the Dawncore, Save the world</h2>
+          <p>
+            In this First-Person Shooter combining freedom of movement with the thrill of horde combat, your objective is to return the light (the Dawncore) to a kingdom enveloped by dark forces.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <div class="tag-container">
+            <div class="tag" style="background-color: #b12bd6">Unreal Engine</div>
+            <div class="tag" style="background-color: #4E86DB">C++</div>
+            <div class="tag" style="background-color: #808080">Team</div>
+            <div class="tag" style="background-color: #ff6853">In development</div>
+          </div>
+          <p>
+            A UCI Capstone course project including collaborators from UCI's Video Game Development Club (VGDC).
+            <ul>
+              <li><b>Roles: </b>Programmer</li>
+              <li><b>Software: </b>Unreal Engine 5 (C++ and Blueprints), Perforce</li>
+              <li><b>Team size: </b>15</li>
+              <li><b>Genres: </b>FPS, Horde shooter</li>
+              <li><b>Platform: </b>PC</li>
+              <li><b>Dates: </b>Oct 2024 - (Ongoing)</li>
+            </ul> 
+          </p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>Programming Contributions</h2>
+          <ul>
+            <li>Implementing movement (patrol, chase, jump) and attack mechanics for enemy artificial intelligence (AI). 
+            <li>Working with Unreal Engine's AI behavior trees and navigation mesh.
+            <li>Prototyping using Blueprints, and moving performance-heavy functionality to C++. 
+          </ul> 
+        </div>
+      </section>
+      <section>
+        <div>
+          <h5>Enemy Jump</h5>
+          <ul>
+            <li>Implemented a mechanic that allows enemies to intelligently jump on top of any platform or over any gap that is in its way.  
+            <li>Leveraged line traces to detect obstacles and gaps in front of the enemy.
+            <li>Leveraged box traces in a unique way to find reachable ledges to jump to.
+          </ul> 
+        </div>
+      </section>
+      <section>
+        <div>
+          <h5>Enemy Attack</h5>
+          <ul>
+            <li>Implemented a mechanic allowing enemies to attack when the player is in range. 
+            <li>In the enemy’s AI behavior tree, used a Service to check whether the player is in range, and used parallel execution to allow for attacking while chasing the player.
+            <li>Utilized a sphere collider attached to the enemy’s hand to detect when it hits the player and damage them accordingly.
+          </ul> 
+        </div>
+      </section>
+      <section>
+        <div>
+          <h5>Enemy AI Patrol and Chase</h5>
+          <ul>
+            <li>Implemented a way for enemies to wander around to random points, and begin chasing the player when they come into view.
+            <li>Set up an AI behavior tree to allow the enemy to easily enter the appropriate state when certain conditions are met. 
+            <li>Set up a navigation mesh to allow enemies to move around the environment and find the best path to their target.
+          </ul> 
+        </div>
+      </section>
+    </main>
+    <script src="navigation_bar.js"></script>
+    <script src="footer.js"></script>
+    <!--<script src="slideshow.js"></script>-->
+    <script>
+      function openDocument() {
+        window.open("https://docs.google.com/document/d/1Gzkq5Abmq18dj28_39EdtJt54YinLw2TWJZ9fuDwpLM/edit?usp=sharing");
+      }
+    </script>
+  </body>
+</html>

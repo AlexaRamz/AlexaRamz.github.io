@@ -1,6 +1,16 @@
 
 let projectList = [
   {
+    name: "Dawncore",
+    image: "Dawncore/DawncoreThumbnail.jpg",
+    altText: "",
+    dates: "Oct 2024 - (Ongoing)",
+    roles: "Programmer",
+    description: "A UCI Capstone course project including collaborators from UCI's Video Game Development Club (VGDC). In this First-Person Shooter combining freedom of movement with the thrill of horde combat, your objective is to return the light (the Dawncore) to a kingdom enveloped by dark forces.",
+    tags: ["Unreal Engine", "C++", "Team", "In development"],
+    pageSource: "dawncore.html"
+  },
+  {
     name: "Build to Space",
     image: "BuildToSpace/BuildtoSpaceThumbnail.png",
     altText: "",
@@ -17,7 +27,7 @@ let projectList = [
     dates: "Oct 2021 - (Ongoing)",
     roles: "",
     description: "This ongoing personal project is a cooking and potion-brewing role-playing video game where you build and manage your own coffee shop while brewing magic potions to battle monsters.",
-    tags: ["Unity", "C#"],
+    tags: ["Unity", "C#", "In development"],
     pageSource: "coffees_brew.html"
   },
   {
@@ -53,9 +63,12 @@ let projectList = [
 ];
 
 let tagColors = {
-  "Unity": "#4E86DB",
-  "C#": "#678E45",
+  "Unity": "#78b835",
+  "C#": "#4E86DB",
   "Team": "#808080", 
+  "Unreal Engine": "#b12bd6",
+  "C++": "#4E86DB",
+  "In development": "#ff6853" 
 }
 
 function createTag(tagName) {
@@ -75,7 +88,9 @@ function createTags(tagNames) {
 function createProjectCardStyle1(project) {
   return `
     <article class="project-card project-card-blue">
-      <img src="${project.image}" alt="${project.altText}">
+      <button class="img-button" onclick="window.location.href='${project.pageSource}'">
+        <img src="${project.image}" alt="${project.altText}">
+      </button>
       <div class="project-desc">
         <div>
           <h2>${project.name}</h2>
@@ -87,7 +102,7 @@ function createProjectCardStyle1(project) {
           </p>
         </div>
         <div class="button-container">
-          <button class = "outline-button outline-button-blue hover-float" onclick="window.location.href='${project.pageSource}'">
+          <button class="outline-button outline-button-blue hover-float" onclick="window.location.href='${project.pageSource}'">
             More Info →
           </button>
         </div>
@@ -115,7 +130,9 @@ function createProjectCardStyle2(project) {
           </button>
         </div>
       </div>
-      <img src="${project.image}" alt="${project.altText}">
+      <button class="img-button" onclick="window.location.href='${project.pageSource}'">
+        <img src="${project.image}" alt="${project.altText}">
+      </button>
     </article>
   `;
 }

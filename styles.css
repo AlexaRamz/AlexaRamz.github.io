@@ -9,18 +9,28 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  font-size: 1.125rem;
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: #64769E;
-  height: 380px;
   position: relative;
+  height: 400px;
+}
+
+.cover-header {
+  height: 100vh;
 }
 
 header img {
   width: 100%;
   height: 100%;
+}
+
+header .top-bar {
+  position: absolute;
+  top: 0%;
+  left: 0%;
 }
 
 header .header-content {
@@ -29,6 +39,18 @@ header .header-content {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.cover-header .header-content{
+  left: 0%;
+  margin: 0 10%;
+  transform: translate(0, -50%);
+  text-align: left;
+}
+
+header .social-buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 main {
@@ -47,9 +69,14 @@ footer {
   gap: 10px;
 }
 
+footer .social-buttons {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Title Text */
 h1 {
-  font: bold italic 3.125rem 'Lato', sans-serif;
+  font: bold 3.125rem 'Lato', sans-serif;
   
   margin: 0;
   padding: 0;
@@ -112,9 +139,20 @@ li {
   background-color: #424242;
 }
 
-.project-card img {
+.img-button {
+  width: fit-content;
   height: 300px;
+  transition: transform .2s;
+}
+
+.img-button img {
+  height: 100%;
+  object-fit: contain;
   border-radius: 25px;
+}
+
+.img-button:hover {
+  transform: scale(1.03);
 }
 
 .project-desc {
@@ -205,6 +243,15 @@ button {
   transform: scale(1.2);
 }
 
+.hover-brighten {
+  opacity: 0.5;
+  transition: all .1s ease;
+}
+
+.hover-brighten:hover {
+  opacity: 1;
+}
+
 /* Project navigation bars */
 .project-nav {
   padding-top: 15px;
@@ -217,14 +264,14 @@ button {
 /* Keyword tags */
 .tag-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
-  height: 28px;
+  height: fit-content;
 }
 
 .tag {
-  height: 100%;
   width: fit-content; 
-  padding: 0px 20px;
+  padding: 2px 20px;
   border-radius: 20px;
   font-family: 'Lato', sans-serif;
 }
@@ -233,24 +280,30 @@ button {
 .top-bar {
   background-color: #1C1C1C;
   display: flex;
-  padding: 18px;
+  flex-direction: column;
+  gap: 15px;
+  padding: 18px 0;
+  width: 100%;
+}
+
+.top-bar nav {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-text {
   font-size: 1.25rem;
   position: absolute;
+  left: 30px;
+  text-align: center;
 }
 
-nav, .footer-buttons {
+nav {
   width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-
   display: flex;
   justify-content: space-between;
-  gap: 25px;
+  gap: 50px;
 }
-
 a {
   text-decoration: none;
   color: inherit;
@@ -260,13 +313,21 @@ a:hover {
   color: #D1D1D1;
 }
 
-/* Contacts footer */
-.contact-button {
-  width: 35px;
-  height: 35px;
+/* Social buttons */
+.social-buttons {
+  width: fit-content;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
 }
 
-.contact-button img {
+.social-button {
+  width: 32px;
+  height: 32px;
+}
+
+.social-button img {
   width: 100%;
   height: 100%;
 }
@@ -293,7 +354,94 @@ a:hover {
   margin: 0 auto;
 }
 
+.project-sections section .slideshow-container {
+  width: 1000px;
+}
+
 .wrap {overflow:hidden} 
+
+/* Skills Section */
+#skill-icons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 20%;
+}
+
+.skill-icon {
+  width: 100px;
+  height: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-icon img {
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
 
 /* Media queries*/
 @media screen and (max-width: 1000px) {
@@ -306,9 +454,13 @@ a:hover {
   .project-card {
     display: block;
   }
-  .project-card img {
+  .img-button {
     width: 100%;
-    height: 100%;
+    height: fit-content;
+  }
+  .img-button img {
+    width: 100%;
+    height: auto;
   }
   .project-desc {
     width: 100%;
@@ -327,5 +479,12 @@ a:hover {
   .project-sections section img {
     width: 100%;
     height: 100%;
+  }
+  .project-sections section .slideshow-container {
+    width: 100%;
+  }
+
+  .logo-text {
+    position: static;
   }
 }
