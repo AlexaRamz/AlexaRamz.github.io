@@ -5,7 +5,8 @@ function createNav() {
     <div class="top-bar">
       <div class="logo-text">Alexandra Ramirez</div>
       <nav>
-        <a href="index.html">Home</a>
+        <a href="index.html">About Me</a>
+        <a href="#skills-section">Skills</a>
         <div class="dropdown">
           <a id="project-dropdown-btn" href="#projects-section">Projects</a>
           <div id="projects-dropdown-content" class="dropdown-content">
@@ -31,4 +32,3 @@ for (let i = 0; i < projectList.length; i++) {
   tempContainer2.innerHTML = `<a href="${projectList[i].pageSource}">${projectList[i].name}</a>`
   projectsDropdown.appendChild(tempContainer2)
 }
-
