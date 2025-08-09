@@ -1,66 +1,27 @@
 import { useState } from 'react'
 import './App.css'
 
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
-import NavBar from './components/NavBar.jsx'
-import ProjectList from './components/ProjectList.jsx'
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage.jsx';
+import Dawncore from './pages/Dawncore.jsx';
+import BuildToSpace from './pages/BuildToSpace.jsx';
+import CoffeesBrew from './pages/CoffeesBrew.jsx';
+import SciFiPuzzle from './pages/SciFiPuzzle.jsx';
+import ShroudedMoon from './pages/ShoudedMoon.jsx';
+import WildLasers from './pages/WildLasers.jsx';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function App()
+{
   return (
-    <>
-      <NavBar/>
-      <Header/> 
-      
-      <main>
-      <section>
-        <span id="skills-section"></span>
-        <h2>Skills & Tools</h2>
-        <div id="skill-icons-container">
-        <div className="skill-icon">
-          <img src="src/assets/Icons/UEIcon.png" alt=""/>
-          Unreal Engine
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/UnityIcon.png" alt=""/>
-          Unity
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/CppIcon.png" alt=""/>
-          C++
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/CSharpIcon.png" alt=""/>
-          C#
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/CIcon.png" alt=""/>
-          C
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/PythonIcon.png" alt=""/>
-          Python
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/HTMLIcon.png" alt=""/>
-          HTML
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/CSSIcon.png" alt=""/>
-          CSS
-        </div>
-        <div className="skill-icon">
-          <img src="src/assets/Icons/JavascriptIcon.png" alt=""/>
-          Javascript
-        </div>
-        </div>
-      </section>
-      <ProjectList/>
-      </main>
-      <Footer/> 
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/projects/dawncore" element={<Dawncore />} />
+      <Route path="/projects/build_to_space" element={<BuildToSpace />} />
+      <Route path="/projects/coffees_brew" element={<CoffeesBrew />} />
+      <Route path="/projects/scifi_puzzle" element={<SciFiPuzzle />} />
+      <Route path="/projects/shrouded_moon" element={<ShroudedMoon />} />
+      <Route path="/projects/wild_lasers" element={<WildLasers />} />
+    </Routes>
   )
 }
 

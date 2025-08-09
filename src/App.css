@@ -88,7 +88,7 @@ header .header-content {
   text-align: center;
 }
 
-.cover-header .header-content{
+.cover-header .header-content {
   left: 0%;
   margin: 0 10%;
   transform: translate(0, -50%);
@@ -125,7 +125,7 @@ footer .social-buttons {
 /* Title Text */
 h1 {
   font: bold 3.125rem 'Lato', sans-serif;
-  
+
   margin: 0;
   padding: 0;
 }
@@ -134,6 +134,7 @@ h1 {
 h2 {
   color: #CFE2F3;
   font-size: 1.625rem;
+  font-weight: bold;
 }
 
 /* Subheading 1 */
@@ -218,9 +219,9 @@ li {
 
 /* Buttons */
 button {
-  all: unset; 
-  cursor: pointer; 
-  width: fit-content; 
+  all: unset;
+  cursor: pointer;
+  width: fit-content;
   text-align: center;
   font-family: 'Lato', sans-serif;
 
@@ -230,12 +231,13 @@ button {
 
 .gradient-button {
   height: 42px;
-  background-image: linear-gradient(to right, #1f1faa , #00d4ff);;
+  background-image: linear-gradient(to right, #1f1faa, #00d4ff);
+  ;
 }
 
 .outline-button {
   height: 40px;
-  border: 2px solid white; 
+  border: 2px solid white;
   border-radius: 25px;
   color: white;
   padding-left: 20px;
@@ -252,8 +254,9 @@ button {
 }
 
 .primary-button-color {
-  background-color: #0B5394;;
+  background-color: #0B5394;
 }
+
 .secondary-button-color {
   background-color: #393939;
 }
@@ -268,6 +271,7 @@ button {
 .outline-button:hover {
   background-color: white;
   color: #0B5394;
+  border-color: white;
 }
 
 .project-card-gray .outline-button:hover {
@@ -318,7 +322,7 @@ button {
 }
 
 .tag {
-  width: fit-content; 
+  width: fit-content;
   padding: 2px 20px;
   border-radius: 20px;
   font-family: 'Lato', sans-serif;
@@ -352,6 +356,7 @@ nav {
   justify-content: space-between;
   gap: 50px;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -367,11 +372,12 @@ a:hover {
 }
 
 .dropdown-content {
-  display: none; /* Change to flex to show*/
+  display: none;
+  /* Change to flex to show*/
   position: absolute;
   background-color: #1C1C1C;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
   flex-direction: column;
@@ -379,7 +385,9 @@ a:hover {
   padding: 12px 20px;
 }
 
-.dropdown:hover .dropdown-content {display: flex;}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
 
 /* Social buttons */
 .social-buttons {
@@ -417,8 +425,8 @@ a:hover {
   width: 640px;
   height: 360px;
   border-width: 0px;
-  
-  display: block; 
+
+  display: block;
   margin: 0 auto;
 }
 
@@ -426,7 +434,9 @@ a:hover {
   width: 1000px;
 }
 
-.wrap {overflow:hidden} 
+.wrap {
+  overflow: hidden
+}
 
 /* Skills Section */
 #skill-icons-container {
@@ -462,7 +472,8 @@ a:hover {
   display: none;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -482,8 +493,9 @@ a:hover {
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .dot {
@@ -497,7 +509,8 @@ a:hover {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -507,8 +520,13 @@ a:hover {
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* Media queries*/
@@ -522,20 +540,25 @@ a:hover {
   .project-card {
     display: block;
   }
+
   .img-button {
     width: 100%;
     height: fit-content;
   }
+
   .img-button img {
     width: 100%;
     height: auto;
   }
+
   .project-desc {
     width: 100%;
   }
-  .project-card-gray .outline-button{
+
+  .project-card-gray .outline-button {
     margin-bottom: 20px;
   }
+
   .project-card-blue img {
     margin-bottom: 15px;
   }
@@ -544,10 +567,12 @@ a:hover {
   .project-sections section {
     display: block;
   }
+
   .project-sections section img {
     width: 100%;
     height: 100%;
   }
+
   .project-sections section .slideshow-container {
     width: 100%;
   }

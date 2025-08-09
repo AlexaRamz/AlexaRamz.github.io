@@ -37,7 +37,9 @@ export const projectList = [
     roles: "Team Lead, Programmer",
     description: "An electricity-based top-down puzzle game I led and developed as part of UCI's Video Game Development Club. Control a maintenance robot to fix and return power to all of the lightbulbs!",
     tags: ["Unity", "C#", "Team"],
-    pageSource: "beep_boop_puzzle.html"
+    pageSource: "beep_boop_puzzle.html",
+    playLink: "https://alexaramz.itch.io/beepboops-puzzle-adventure",
+    codeLink: "https://github.com/AlexaRamz/2d-topdown-puzzle",
   },
   {
     name: "Shrouded Moon",
@@ -64,8 +66,8 @@ export const projectList = [
 export const tagColors = {
   "Unity": "#78b835",
   "C#": "#4E86DB",
-  "Team": "#808080", 
+  "Team": "#808080",
   "Unreal Engine": "#b12bd6",
   "C++": "#4E86DB",
-  "In development": "#ff6853" 
+  "In development": "#ff6853"
 }
