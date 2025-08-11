@@ -1,6 +1,7 @@
 export const stardustFallacyData = {
   name: "Stardust Fallacy",
-  image: "",
+  categories: ['Games'],
+  image: "StardustFallacy/StardustFallacyGameplayThumbnail.png",
   altText: "",
   dates: "June 18 - 24",
   roles: "Project Lead, Programmer, Artist",
@@ -12,6 +13,7 @@ export const stardustFallacyData = {
 
 export const dawncoreData = {
   name: "Dawncore",
+  categories: ['Games'],
   image: "Dawncore/DawncoreThumbnail.jpg",
   altText: "",
   dates: "Oct 2024 - June 2025",
@@ -24,6 +26,7 @@ export const dawncoreData = {
 
 export const buildToSpaceData = {
   name: "Build to Space",
+  categories: ['Games'],
   image: "BuildToSpace/BuildtoSpaceThumbnail.png",
   altText: "",
   dates: "Jan - June 2024",
@@ -37,6 +40,7 @@ export const buildToSpaceData = {
 
 export const coffeesBrewData = {
   name: "Coffee's Brew",
+  categories: ['Games'],
   image: "CoffeesBrew/CoffeesBrewThumbnail.png",
   altText: "A cat character holds an unbaked cupcake in a cafe kitchen, ready to place it in a nearby oven.",
   dates: "Oct 2021 - (Ongoing)",
@@ -49,6 +53,7 @@ export const coffeesBrewData = {
 
 export const scifiPuzzleData = {
   name: "Beep Boop's Puzzle Adventure",
+  categories: ['Games'],
   image: "BeepBoopPuzzle/BeepBoopPuzzleAnimatedThumbnail.gif",
   altText: "A robot stands on a button that is rotating a wire on the path between a battery and a lightbulb.",
   dates: "Oct - Dec 2022",
@@ -62,6 +67,7 @@ export const scifiPuzzleData = {
 
 export const shroudedMoonData = {
   name: "Shrouded Moon",
+  categories: ['Games'],
   image: "ShroudedMoon/ShroudedMoonThumbnail.png",
   altText: "",
   dates: "Oct - Dec 2023",
@@ -74,6 +80,7 @@ export const shroudedMoonData = {
 
 export const wildLasersData = {
   name: "Wild Lasers",
+  categories: ['Games'],
   image: "WildLasers/WildLasersThumbnail.png",
   altText: "",
   dates: "April - June 2022",
@@ -93,6 +100,12 @@ export const projects = [
   scifiPuzzleData,
   shroudedMoonData,
   wildLasersData,
+];
+
+export const webProjects = [
+  stardustFallacyData,
+  dawncoreData,
+  buildToSpaceData,
 ];
 
 export const tagColors = {
