@@ -1,3 +1,29 @@
+export const fabflix = {
+  name: "Fabflix - Movie browser",
+  categories: ['Web'],
+  image: "",
+  altText: "",
+  dates: "March - July 2025",
+  roles: "Programmer",
+  description: "",
+  tags: ["Java", "MySQL", "HTML", "CSS", "Javascript", "Team"],
+  externalLink: "https://github.com/AlexaRamz/inf134-campus-app-redesign",
+  externalLinkTitle: "Github"
+}
+
+export const campusAppRedesign = {
+  name: "UCI Campus App Redesign",
+  categories: ['Web', 'Mobile'],
+  image: "CampusAppRedesign/BrowserThumbnail.png",
+  altText: "",
+  dates: "March - June 2025",
+  roles: "Lead programmer",
+  description: "",
+  tags: ["React Native", "HTML", "CSS", "Javascript", "Team"],
+  externalLink: "https://github.com/AlexaRamz/inf134-campus-app-redesign",
+  externalLinkTitle: "Github"
+}
+
 export const stardustFallacyData = {
   name: "Stardust Fallacy",
   categories: ['Games'],
@@ -93,6 +119,8 @@ export const wildLasersData = {
 }
 
 export const projects = [
+  fabflix,
+  campusAppRedesign,
   stardustFallacyData,
   dawncoreData,
   buildToSpaceData,
@@ -102,12 +130,6 @@ export const projects = [
   wildLasersData,
 ];
 
-export const webProjects = [
-  stardustFallacyData,
-  dawncoreData,
-  buildToSpaceData,
-];
-
 export const tagColors = {
   "Unity": "#78b835",
   "C#": "#4E86DB",
@@ -115,5 +137,11 @@ export const tagColors = {
   "Unreal Engine": "#b12bd6",
   "C++": "#4E86DB",
   "In development": "#ff6853",
-  "Uni Jam Submission": "#ff31a2ff"
+  "Uni Jam Submission": "#ff31a2ff",
+  "React Native": "#35aed0ff",
+  "HTML": "#ff6853",
+  "CSS": "#9453d4ff",
+  "Javascript": "#78b835",
+  "Java": "#4E86DB",
+  "MySQL": "#ff31a2ff",
 }
