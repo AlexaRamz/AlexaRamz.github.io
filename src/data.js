@@ -11,6 +11,19 @@ export const fabflix = {
   externalLinkTitle: "Github"
 }
 
+export const stardustFallacyData = {
+  name: "Stardust Fallacy",
+  categories: ['Games'],
+  image: "StardustFallacy/StardustFallacyGameplayThumbnail.png",
+  altText: "",
+  dates: "July 2025",
+  roles: "Project Lead, Programmer, Artist",
+  description: "Pixel art space action game featuring star-themed magical girl characters who must defend the Earth from asteroids and alien creatures. Submission for the 2025 Uni Jam, a week-long game jam for California-wide universities, for the theme Astral.",
+  tags: ["Unity", "C#", "Team", "Uni Jam Submission"],
+  externalLink: "https://alexaramz.itch.io/stardust-fallacy",
+  externalLinkTitle: "Itch Page"
+}
+
 export const campusAppRedesign = {
   name: "UCI Campus App Redesign",
   categories: ['Web', 'Mobile'],
@@ -22,19 +35,6 @@ export const campusAppRedesign = {
   tags: ["React Native", "HTML", "CSS", "Javascript", "Team"],
   externalLink: "https://github.com/AlexaRamz/inf134-campus-app-redesign",
   externalLinkTitle: "Github"
-}
-
-export const stardustFallacyData = {
-  name: "Stardust Fallacy",
-  categories: ['Games'],
-  image: "StardustFallacy/StardustFallacyGameplayThumbnail.png",
-  altText: "",
-  dates: "June 18 - 24",
-  roles: "Project Lead, Programmer, Artist",
-  description: "Pixel art space action game featuring star-themed magical girl characters who must defend the Earth from asteroids and alien creatures. Submission for the 2025 Uni Jam, a week-long game jam for California-wide universities, for the theme Astral.",
-  tags: ["Unity", "C#", "Team", "Uni Jam Submission"],
-  externalLink: "https://alexaramz.itch.io/stardust-fallacy",
-  externalLinkTitle: "Itch Page"
 }
 
 export const dawncoreData = {
@@ -120,8 +120,8 @@ export const wildLasersData = {
 
 export const projects = [
   fabflix,
-  campusAppRedesign,
   stardustFallacyData,
+  campusAppRedesign,
   dawncoreData,
   buildToSpaceData,
   coffeesBrewData,

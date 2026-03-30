@@ -125,7 +125,6 @@ footer .social-buttons {
 /* Title Text */
 h1 {
   font: bold 3.125rem 'Lato', sans-serif;
-
   margin: 0;
   padding: 0;
 }
@@ -160,7 +159,7 @@ h5 {
   font-size: 1rem;
 }
 
-/* Normal Text */
+/* List Item */
 li {
   margin-bottom: 10px;
 }
@@ -209,6 +208,17 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.project-card-header {
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .project-card .button-container {
@@ -563,10 +573,10 @@ a:hover {
     height: auto;
   }
 
-  .project-desc {
+  .project-content  {
     width: 100%;
   }
-
+  
   .project-card-gray .outline-button {
     margin-bottom: 20px;
   }

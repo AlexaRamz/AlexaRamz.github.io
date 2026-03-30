@@ -44,10 +44,15 @@ export default function ProjectCard(props)
 		return (
 			<div className="project-desc">
 				<div>
-					<h2>{project.name}</h2>
+					<h2 className="project-card-header">{project.name}</h2>
 
-					{createTagsContainer(project.tags)}
-
+					<div className="project-meta">
+						{createTagsContainer(project.tags)}
+						<div>
+							{project.dates}
+						</div>
+					</div>
+					
 					<p>
 						{project.description}
 					</p>

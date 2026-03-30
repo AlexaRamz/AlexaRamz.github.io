@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard.jsx'
 export default function ProjectsSection()
 {
 	const [activeCategory, setActiveCategory] = useState('All');
-	const uniqueCategories = ['All', ...new Set(projects.flatMap(project => project.categories))];
+	const uniqueCategories = ['All', 'Games', 'Web', 'Mobile'];
 
 	function createProjectCards()
 	{

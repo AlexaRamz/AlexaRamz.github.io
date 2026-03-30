@@ -4,7 +4,7 @@ export default function ProjectHeader({ title, subTitle, linkButtons })
 {
 	return (
 		<div id="nav-header">
-			<header className="project-header">
+			<header>
 				<img src={ThemeImage} alt="Theme" />
 				<div className="header-content">
 					<h1>{title}</h1>
