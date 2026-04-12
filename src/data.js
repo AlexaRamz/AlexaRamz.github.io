@@ -1,13 +1,14 @@
 export const fabflix = {
   name: "Fabflix - Movie browser",
   categories: ['Web'],
-  image: "",
+  image: "Fabflix/FabflixDashboard.png",
+  videoSrc: "https://www.youtube.com/watch?v=-0L3TDyDj64",
   altText: "",
   dates: "March - July 2025",
   roles: "Programmer",
-  description: "",
+  description: "Full-stack Netflix-inspired movie rental website developed for a project course that allows users to search, browse, and filter over 9,000 movie records in a MySQL database",
   tags: ["Java", "MySQL", "HTML", "CSS", "Javascript", "Team"],
-  externalLink: "https://github.com/AlexaRamz/inf134-campus-app-redesign",
+  externalLink: "https://github.com/uci-jherold2-2025spring-cs122b/2025-spring-cs-122b-team-cheesecake/tree/post-course-improvements",
   externalLinkTitle: "Github"
 }
 
@@ -68,6 +69,7 @@ export const coffeesBrewData = {
   name: "Coffee's Brew",
   categories: ['Games'],
   image: "CoffeesBrew/CoffeesBrewThumbnail.png",
+  videoSrc: "https://drive.google.com/uc?export=download&id=1ZVRdQIiSMTh0i7npFhlve0aL61Q_YQVM",
   altText: "A cat character holds an unbaked cupcake in a cafe kitchen, ready to place it in a nearby oven.",
   dates: "Oct 2021 - (Ongoing)",
   roles: "",

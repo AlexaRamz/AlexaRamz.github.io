@@ -1,5 +1,6 @@
 import { createTagsContainer } from './ProjectTag.jsx';
 import { useNavigate } from 'react-router-dom';
+import ProjectHoverVideo from './ProjectHoverVideo.jsx'
 
 export default function ProjectCard(props)
 {
@@ -52,7 +53,7 @@ export default function ProjectCard(props)
 							{project.dates}
 						</div>
 					</div>
-					
+
 					<p>
 						{project.description}
 					</p>
@@ -69,13 +70,23 @@ export default function ProjectCard(props)
 	let cardClass = "project-card";
 	let children = null;
 
+	const MediaComponent = props.project.videoSrc ? (
+		<ProjectHoverVideo project={props.project} />
+	) : (
+		<ProjectImage project={props.project} />
+	);
+
+	const DescriptionComponent = (
+		<ProjectDescription variant={props.variant} project={props.project} />
+	);
+
 	if (props.variant === 'blue')
 	{
 		cardClass += " project-card-blue";
 		children = (
 			<>
-				<ProjectImage project={props.project} />
-				<ProjectDescription variant={props.variant} project={props.project} />
+				{MediaComponent}
+				{DescriptionComponent}
 			</>
 		)
 	}
@@ -84,8 +95,8 @@ export default function ProjectCard(props)
 		cardClass += " project-card-gray";
 		children = (
 			<>
-				<ProjectDescription variant={props.variant} project={props.project} />
-				<ProjectImage project={props.project} />
+				{DescriptionComponent}
+				{MediaComponent}
 			</>
 		)
 	}

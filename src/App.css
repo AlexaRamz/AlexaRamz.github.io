@@ -199,8 +199,28 @@ li {
   border-radius: 25px;
 }
 
-.img-button:hover {
+.project-hover-video {
+  width: auto;
+  height: 250px;
+  flex-shrink: 0;
+  aspect-ratio: 16 / 9;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: transform .2s;
+  cursor: pointer;
+  background-color: #000;
+  position: relative;
+}
+
+.img-button:hover,
+.project-hover-video:hover {
   transform: scale(1.03);
+}
+
+.project-hover-video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project-desc {
@@ -563,6 +583,10 @@ a:hover {
     display: block;
   }
 
+  .project-hover-video {
+    width: 100%;
+  }
+
   .img-button {
     width: 100%;
     height: fit-content;
@@ -573,10 +597,10 @@ a:hover {
     height: auto;
   }
 
-  .project-content  {
+  .project-content {
     width: 100%;
   }
-  
+
   .project-card-gray .outline-button {
     margin-bottom: 20px;
   }
