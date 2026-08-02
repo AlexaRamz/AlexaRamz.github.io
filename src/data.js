@@ -8,8 +8,6 @@ export const fabflix = {
   roles: "Programmer",
   description: "Full-stack Netflix-inspired movie rental website developed for a project course that allows users to search, browse, and filter over 9,000 movie records in a MySQL database",
   tags: ["Java", "MySQL", "HTML", "CSS", "Javascript", "Team"],
-  externalLink: "https://github.com/uci-jherold2-2025spring-cs122b/2025-spring-cs-122b-team-cheesecake/tree/post-course-improvements",
-  externalLinkTitle: "Github"
 }
 
 export const stardustFallacyData = {
@@ -76,7 +74,6 @@ export const coffeesBrewData = {
   description: "This ongoing personal project is a cooking and potion-brewing role-playing video game where you build and manage your own coffee shop while brewing magic potions to battle monsters.",
   tags: ["Unity", "C#", "In development"],
   urlPath: "coffees_brew",
-  codeLink: "https://github.com/AlexaRamz/CoffeesBrewUnityGame"
 }
 
 export const scifiPuzzleData = {

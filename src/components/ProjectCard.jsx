@@ -8,11 +8,11 @@ export default function ProjectCard(props)
 
 	function navigateToProject(project)
 	{
-		if (project.externalLink != null)
+		if (project.externalLink)
 		{
 			window.open(project.externalLink, '_blank'); // Open the external link in a new tab
 		}
-		else
+		else if (project.urlPath)
 		{
 			navigate(`/projects/${project.urlPath}`);
 		}
@@ -58,11 +58,13 @@ export default function ProjectCard(props)
 						{project.description}
 					</p>
 				</div>
-				<div className="button-container">
-					<button className={buttonClass} onClick={() => navigateToProject(project)}>
-						{project.externalLink != null ? project.externalLinkTitle : "More Info"} →
-					</button>
-				</div>
+				{(project.externalLink || project.urlPath) && (
+					<div className="button-container">
+						<button className={buttonClass} onClick={() => navigateToProject(project)}>
+							{project.externalLinkTitle ?? "More Info"} →
+						</button>
+					</div>
+				)}
 			</div>
 		)
 	}

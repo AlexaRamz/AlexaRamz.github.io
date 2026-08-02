@@ -7,16 +7,12 @@ import CoffeesBrewCooking from '../assets/CoffeesBrew/CoffeesBrewCooking.png';
 import CoffeesBrewDialogue from '../assets/CoffeesBrew/CoffeesBrewDialogue.png';
 import { coffeesBrewData } from '../data.js';
 
-const linkButtonsData = [
-	{ buttonText: "Source code", externalLink: coffeesBrewData.codeLink }
-];
-
 export default function CoffeesBrew()
 {
 	return (
 		<>
 			<NavBar />
-			<ProjectHeader title={"Coffee's Brew"} subTitle="Potion-brewing RPG" linkButtons={linkButtonsData} />
+			<ProjectHeader title={"Coffee's Brew"} subTitle="Potion-brewing RPG" />
 
 			<main className="project-sections">
 				<section>

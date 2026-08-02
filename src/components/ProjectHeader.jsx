@@ -9,17 +9,19 @@ export default function ProjectHeader({ title, subTitle, linkButtons })
 				<div className="header-content">
 					<h1>{title}</h1>
 					<h3>{subTitle}</h3>
-					<div className="button-row">
-						{linkButtons.map(({ buttonText, externalLink }, index) => (
-							<button
-								key={index}
-								className="round-button primary-button-color hover-float"
-								onClick={() => window.open(externalLink, '_blank')}
-							>
-								{buttonText}
-							</button>
-						))}
-					</div>
+					{linkButtons && (
+						<div className="button-row">
+							{linkButtons.map(({ buttonText, externalLink }, index) => (
+								<button
+									key={index}
+									className="round-button primary-button-color hover-float"
+									onClick={() => window.open(externalLink, '_blank')}
+								>
+									{buttonText}
+								</button>
+							))}
+						</div>
+					)}
 				</div>
 			</header>
 		</div>
