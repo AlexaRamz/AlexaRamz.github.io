@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
+import styles from './ProjectHoverVideo.module.css';
 
 export default function ProjectHoverVideo({ project })
 {
@@ -17,7 +18,7 @@ export default function ProjectHoverVideo({ project })
 
   return (
     <div
-      className="project-hover-video"
+      className={styles.projectHoverVideo}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

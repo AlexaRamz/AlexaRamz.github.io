@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { projects } from '../data.js';
-import ProjectCard from './ProjectCard.jsx'
+import ProjectCard from './ProjectCard/ProjectCard.jsx'
 
 export default function ProjectsSection()
 {

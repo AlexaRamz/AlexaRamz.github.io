@@ -1,0 +1,107 @@
+.projectCard {
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.projectCardBlue {
+  background-color: #0B5394;
+}
+
+.projectCardGray {
+  background-color: #424242;
+}
+
+.imgButton {
+  width: fit-content;
+  height: 300px;
+  transition: transform .2s;
+}
+
+.imgButton img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 25px;
+}
+
+.imgButton:hover {
+  transform: scale(1.03);
+}
+
+.projectDesc {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectCardHeader {
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.projectMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projectCard .buttonContainer {
+  display: flex;
+  justify-content: right;
+  padding-right: 20px;
+}
+
+.outlineButton {
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.outlineButton:hover {
+  background-color: white;
+  color: #0B5394;
+  border-color: white;
+}
+
+.projectCardGray .outlineButton:hover {
+  background-color: white;
+  color: #424242;
+}
+
+.hoverFloat {
+  transition: all .2s ease;
+}
+
+.hoverFloat:hover {
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 1000px) {
+  .projectCard {
+    display: block;
+  }
+
+  .imgButton {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .imgButton img {
+    width: 100%;
+    height: auto;
+  }
+
+  .projectCardGray .outlineButton {
+    margin-bottom: 20px;
+  }
+
+  .projectCardBlue img {
+    margin-bottom: 15px;
+  }
+}

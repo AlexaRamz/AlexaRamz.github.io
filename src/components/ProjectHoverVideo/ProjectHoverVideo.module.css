@@ -1,0 +1,28 @@
+.projectHoverVideo {
+  width: auto;
+  height: 250px;
+  flex-shrink: 0;
+  aspect-ratio: 16 / 9;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: transform .2s;
+  cursor: pointer;
+  background-color: #000;
+  position: relative;
+}
+
+.projectHoverVideo:hover {
+  transform: scale(1.03);
+}
+
+.projectHoverVideo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1000px) {
+  .projectHoverVideo {
+    width: 100%;
+  }
+}
