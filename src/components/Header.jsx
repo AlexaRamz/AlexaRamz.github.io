@@ -18,7 +18,9 @@ function Header() {
 			  <img src="src/assets/Icons/EmailIcon.png" alt="An email icon"/>
 			</a>
 		  </div>
-		  Computer Science student at UCI, Game developer, Software engineer
+		  Software Engineer
+		  <br/>
+		  B.S. degree in Computer Science from UC Irvine
 		</div>
 	  </header>
 	)
