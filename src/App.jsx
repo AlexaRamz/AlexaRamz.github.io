@@ -8,19 +8,23 @@ import CoffeesBrew from './pages/CoffeesBrew.jsx';
 import SciFiPuzzle from './pages/SciFiPuzzle.jsx';
 import ShroudedMoon from './pages/ShoudedMoon.jsx';
 import WildLasers from './pages/WildLasers.jsx';
+import ScrollToTop from './components/ScrollToTop.js';
 
 function App()
 {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/projects/dawncore" element={<Dawncore />} />
-      <Route path="/projects/build_to_space" element={<BuildToSpace />} />
-      <Route path="/projects/coffees_brew" element={<CoffeesBrew />} />
-      <Route path="/projects/scifi_puzzle" element={<SciFiPuzzle />} />
-      <Route path="/projects/shrouded_moon" element={<ShroudedMoon />} />
-      <Route path="/projects/wild_lasers" element={<WildLasers />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects/dawncore" element={<Dawncore />} />
+        <Route path="/projects/build_to_space" element={<BuildToSpace />} />
+        <Route path="/projects/coffees_brew" element={<CoffeesBrew />} />
+        <Route path="/projects/scifi_puzzle" element={<SciFiPuzzle />} />
+        <Route path="/projects/shrouded_moon" element={<ShroudedMoon />} />
+        <Route path="/projects/wild_lasers" element={<WildLasers />} />
+      </Routes>
+    </>
   )
 }
 
