@@ -45,6 +45,7 @@ export default function ShroudedMoon()
 						</p>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>My Contributions</h2>
@@ -57,9 +58,10 @@ export default function ShroudedMoon()
 						</ul>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
-						<h5>Enemies</h5>
+						<h2>Enemy Systems</h2>
 						The game has two enemies inspired by Yokai, supernatural entities in Japanese folklore. As programmer, I was responsible for setting up most features for the two enemies, including their movement AI, animation, collision, and health.
 					</div>
 				</section>
@@ -79,7 +81,7 @@ export default function ShroudedMoon()
 				<section>
 					<img src={EnemyHit} alt="" />
 					<div>
-						<h2>Enemy Health</h2>
+						<h5>Enemy Health</h5>
 						Finally, I created a health system for enemies that allows them to take a variable amount of damage from the player, and get destroyed when all health has run out. To make hitting an enemy more responsive and satisfying, I had the enemy flicker red when damaged, and I had the amount of damage inflicted be displayed as a particle dropping from the enemy.
 					</div>
 				</section>

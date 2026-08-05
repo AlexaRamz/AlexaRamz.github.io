@@ -44,6 +44,7 @@ export default function CoffeesBrew()
 						</p>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>What I've Accomplished</h2>
@@ -63,7 +64,7 @@ export default function CoffeesBrew()
 				<section>
 					<div>
 						<img src={CoffeesBrewShop} alt="" />
-					<img src={CoffeesBrewCooking} alt="" />
+						<img src={CoffeesBrewCooking} alt="" />
 					</div>
 					<div>
 						<h5>Interaction</h5>
@@ -94,6 +95,7 @@ export default function CoffeesBrew()
 					</div>
 					<img src={CoffeesBrewDialogue} alt="" />
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Background</h2>

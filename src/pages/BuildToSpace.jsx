@@ -47,6 +47,7 @@ export default function BuildToSpace()
 						</p>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Programming Contributions</h2>
@@ -87,6 +88,7 @@ export default function BuildToSpace()
 					</div>
 					<img src={BuildToSpaceCharacterCustom} alt="" />
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Team lead Responsibilities</h2>
@@ -98,6 +100,7 @@ export default function BuildToSpace()
 						</ul>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Other Contributions</h2>
@@ -108,6 +111,7 @@ export default function BuildToSpace()
 						</ul>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Background</h2>

@@ -44,6 +44,7 @@ export default function Dawncore()
 						</p>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Programming Contributions</h2>

@@ -13,6 +13,7 @@ export default function HomePage()
 
 			<main>
 				<SkillsSection />
+				<hr/>
 				<ProjectsSection />
 			</main>
 			<Footer />

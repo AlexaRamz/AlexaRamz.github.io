@@ -46,6 +46,7 @@ export default function WildLasers()
 						</p>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Programming Contributions</h2>
@@ -58,6 +59,7 @@ export default function WildLasers()
 					</div>
 					<img src={WildLasersBackground} alt="" />
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Art Contributions</h2>
@@ -69,6 +71,7 @@ export default function WildLasers()
 					</div>
 					<img src={WildLasersTilemap} alt="" />
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Team lead Responsibilities</h2>
@@ -79,12 +82,14 @@ export default function WildLasers()
 						</ul>
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Background</h2>
 						This game was the first project I led as part of UCI's Video Game Design Club. Looking to create a game with an intriguing and original game mechanic, the idea I proposed to my team was a unique take on a platformer where instead of running and jumping, the player would depend solely on shooting for movement as well as for combat. Furthermore, as a dabbler in character design, I thought about creating a cast of space hero characters, an alien species from each planet in the solar system with unique designs and colors corresponding to their place of origin. Working as artist and programmer for art and visual effects, this project was a chance to channel some of these ideas into the game's visuals, feel, and environment.
 					</div>
 				</section>
+				<hr/>
 				<section>
 					<div>
 						<h2>Leading a Team</h2>
