@@ -20,7 +20,7 @@ export default function ShroudedMoon()
 			<main className="project-sections">
 				<section>
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/1e2zKbgx0sXvBy_xafsAxnJyilINiyAh1/preview" allow="autoplay"></iframe>
+						<iframe src={shroudedMoonData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
 						<h2>Jump, dash, fight!</h2>

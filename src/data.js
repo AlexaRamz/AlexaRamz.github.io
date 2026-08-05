@@ -47,6 +47,9 @@ export const dawncoreData = {
   tags: ["Unreal Engine", "C++", "Team"],
   urlPath: "dawncore",
   designDocLink: "https://docs.google.com/document/d/1Gzkq5Abmq18dj28_39EdtJt54YinLw2TWJZ9fuDwpLM/edit?usp=sharing",
+  videoEmbed: "https://drive.google.com/file/d/1ZJESBE4uBgySKr-nZ_ycMlJQb4vlcsth/preview",
+  enemyJumpVideoEmbed: "https://drive.google.com/file/d/1jSwV0EGmx0b0KOQbmEvzipjWW9VqEuvR/preview",
+  enemyJump2VideoEmbed: "https://drive.google.com/file/d/1ifeBtWFwfEG3fIRONpdpZgD9tQBD0gPE/preview"
 }
 
 export const buildToSpaceData = {
@@ -60,7 +63,8 @@ export const buildToSpaceData = {
   tags: ["Unity", "C#", "Team"],
   urlPath: "build_to_space",
   playLink: "https://alexaramz.itch.io/build-to-space-vgdc",
-  codeLink: "https://github.com/AlexaRamz/build-to-space-vgdc"
+  codeLink: "https://github.com/AlexaRamz/build-to-space-vgdc",
+  videoEmbed: "https://drive.google.com/file/d/1X5D_WWSKbre2MI08LfDYGWfEUvbyy8oZ/preview"
 };
 
 export const coffeesBrewData = {
@@ -75,6 +79,7 @@ export const coffeesBrewData = {
   tags: ["Unity", "C#", "In development"],
   urlPath: "coffees_brew",
   playLink: "https://alexaramz.itch.io/coffees-brew",
+  videoEmbed: "https://drive.google.com/file/d/1ZVRdQIiSMTh0i7npFhlve0aL61Q_YQVM/preview"
 }
 
 export const scifiPuzzleData = {
@@ -89,6 +94,7 @@ export const scifiPuzzleData = {
   urlPath: "scifi_puzzle",
   playLink: "https://alexaramz.itch.io/beepboops-puzzle-adventure",
   codeLink: "https://github.com/AlexaRamz/2d-topdown-puzzle",
+  videoEmbed: "https://drive.google.com/file/d/13oPJRnBXt9_9meDHL46yGKo7IdsWu0Ds/preview"
 }
 
 export const shroudedMoonData = {
@@ -101,7 +107,8 @@ export const shroudedMoonData = {
   description: "A Japanese folklore-inspired 2D action-platformer that I developed with other members of UCI's Video Game Design Club. This project allowed me to gain experience implementing simple AI and other features for game enemies.",
   tags: ["Unity", "C#", "Team"],
   urlPath: "shrouded_moon",
-  playLink: "https://cairoschurz.itch.io/shrouded-moon"
+  playLink: "https://cairoschurz.itch.io/shrouded-moon",
+  videoEmbed: "https://drive.google.com/file/d/1e2zKbgx0sXvBy_xafsAxnJyilINiyAh1/preview"
 }
 
 export const wildLasersData = {
@@ -116,6 +123,7 @@ export const wildLasersData = {
   urlPath: "wild_lasers",
   playLink: "https://alexaramz.itch.io/wild-lasers",
   codeLink: "https://github.com/AlexaRamz/VGDCSpring2022WildCard",
+  videoEmbed: "https://drive.google.com/file/d/1lcDnhtksLiMuBN3EAVJ_FRoVGORBYuq2/preview"
 }
 
 export const projects = [

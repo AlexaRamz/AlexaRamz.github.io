@@ -22,7 +22,7 @@ export default function BuildToSpace()
 			<main className="project-sections">
 				<section>
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/1X5D_WWSKbre2MI08LfDYGWfEUvbyy8oZ/preview" allow="autoplay"></iframe>
+						<iframe src={buildToSpaceData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
 						<h2>Mine, Build, and Fly!</h2>

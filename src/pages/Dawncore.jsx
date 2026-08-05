@@ -19,7 +19,7 @@ export default function Dawncore()
 				<section>
 
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/1ZJESBE4uBgySKr-nZ_ycMlJQb4vlcsth/preview" allow="autoplay"></iframe>
+						<iframe src={dawncoreData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
 						<h2>Return the Dawncore, Save the world</h2>
@@ -68,10 +68,10 @@ export default function Dawncore()
 				</section>
 				<section>
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/1jSwV0EGmx0b0KOQbmEvzipjWW9VqEuvR/preview" allow="autoplay"></iframe>
+						<iframe src={dawncoreData.enemyJumpVideoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/1ifeBtWFwfEG3fIRONpdpZgD9tQBD0gPE/preview" allow="autoplay"></iframe>
+						<iframe src={dawncoreData.enemyJump2VideoEmbed} allow="autoplay"></iframe>
 					</div>
 				</section>
 				<section>

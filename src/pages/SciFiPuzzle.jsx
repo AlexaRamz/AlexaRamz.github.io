@@ -20,7 +20,7 @@ export default function SciFiPuzzle()
 			<main className="project-sections">
 				<section>
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/13oPJRnBXt9_9meDHL46yGKo7IdsWu0Ds/preview" allow="autoplay"></iframe>
+						<iframe src={scifiPuzzleData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
 						<h2>Electrifying puzzles!</h2>

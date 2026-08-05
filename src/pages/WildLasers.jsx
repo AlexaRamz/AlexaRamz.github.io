@@ -21,7 +21,7 @@ export default function WildLasers()
 			<main className="project-sections">
 				<section>
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/1lcDnhtksLiMuBN3EAVJ_FRoVGORBYuq2/preview" allow="autoplay"></iframe>
+						<iframe src={wildLasersData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
 						<h2>Use shooting for both movement and combat!</h2>

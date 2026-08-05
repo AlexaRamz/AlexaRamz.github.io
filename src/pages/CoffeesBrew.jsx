@@ -22,7 +22,7 @@ export default function CoffeesBrew()
 			<main className="project-sections">
 				<section>
 					<div className="video-container">
-						<iframe src="https://drive.google.com/file/d/1ZVRdQIiSMTh0i7npFhlve0aL61Q_YQVM/preview" allow="autoplay"></iframe>
+						<iframe src={coffeesBrewData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
 						<h2>Make coffee... and potions?</h2>
