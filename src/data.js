@@ -67,13 +67,14 @@ export const coffeesBrewData = {
   name: "Coffee's Brew",
   categories: ['Games'],
   image: "CoffeesBrew/CoffeesBrewThumbnail.png",
-  videoSrc: "https://drive.google.com/uc?export=download&id=1ZVRdQIiSMTh0i7npFhlve0aL61Q_YQVM",
+  videoSrc: "https://www.youtube.com/watch?v=2GTvVgfhZt4",
   altText: "A cat character holds an unbaked cupcake in a cafe kitchen, ready to place it in a nearby oven.",
   dates: "Oct 2021 - (Ongoing)",
   roles: "",
   description: "This ongoing personal project is a cooking and potion-brewing role-playing video game where you build and manage your own coffee shop while brewing magic potions to battle monsters.",
   tags: ["Unity", "C#", "In development"],
   urlPath: "coffees_brew",
+  playLink: "https://alexaramz.itch.io/coffees-brew",
 }
 
 export const scifiPuzzleData = {

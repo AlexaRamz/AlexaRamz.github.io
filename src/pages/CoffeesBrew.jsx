@@ -5,14 +5,19 @@ import { createTagsContainer } from '../components/ProjectTag.jsx';
 import CoffeesBrewBuilding from '../assets/CoffeesBrew/CoffeesBrewBuilding.png';
 import CoffeesBrewCooking from '../assets/CoffeesBrew/CoffeesBrewCooking.png';
 import CoffeesBrewDialogue from '../assets/CoffeesBrew/CoffeesBrewDialogue.png';
+import CoffeesBrewShop from '../assets/CoffeesBrew/CoffeesBrewShop.png';
 import { coffeesBrewData } from '../data.js';
+
+const linkButtonsData = [
+	{ buttonText: "Play", externalLink: coffeesBrewData.playLink },
+];
 
 export default function CoffeesBrew()
 {
 	return (
 		<>
 			<NavBar />
-			<ProjectHeader title={"Coffee's Brew"} subTitle="Potion-brewing RPG" />
+			<ProjectHeader title={"Coffee's Brew"} subTitle="Potion-brewing RPG" linkButtons={linkButtonsData} />
 
 			<main className="project-sections">
 				<section>
@@ -56,7 +61,10 @@ export default function CoffeesBrew()
 					<img src={CoffeesBrewBuilding} alt="" />
 				</section>
 				<section>
+					<div>
+						<img src={CoffeesBrewShop} alt="" />
 					<img src={CoffeesBrewCooking} alt="" />
+					</div>
 					<div>
 						<h5>Interaction</h5>
 						<ul>
