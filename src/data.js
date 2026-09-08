@@ -78,7 +78,7 @@ export const coffeesBrewData = {
   description: "This ongoing personal project is a cooking and potion-brewing role-playing video game where you build and manage your own coffee shop while brewing magic potions to battle monsters.",
   tags: ["Unity", "C#", "In development"],
   urlPath: "coffees_brew",
-  playLink: "https://alexaramz.itch.io/coffees-brew",
+  playLink: "https://alexaramz.itch.io/coffees-brew?secret=T5e86DXOH21YEj07tVts9Ec0Z6E",
   videoEmbed: "https://drive.google.com/file/d/1ZVRdQIiSMTh0i7npFhlve0aL61Q_YQVM/preview"
 }
 
