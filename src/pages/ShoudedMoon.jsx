@@ -19,7 +19,7 @@ export default function ShroudedMoon()
 
 			<main className="project-sections">
 				<section>
-					<div className="video-container">
+					<div className="project-video">
 						<iframe src={shroudedMoonData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
@@ -45,7 +45,7 @@ export default function ShroudedMoon()
 						</p>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>My Contributions</h2>
@@ -58,7 +58,7 @@ export default function ShroudedMoon()
 						</ul>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Enemy Systems</h2>
@@ -76,10 +76,10 @@ export default function ShroudedMoon()
 						<h5>Edge and Wall Detection</h5>
 						To make enemy behavior more realistic, I attempted to make enemies be able to avoid running off edges or smashing into walls. Ground enemies in the wandering state will reverse their direction right before reaching an edge or wall.
 					</div>
-					<img src={WallEdgeDetection} alt="" />
+					<img className="narrow-img" src={WallEdgeDetection} alt="" />
 				</section>
 				<section>
-					<img src={EnemyHit} alt="" />
+					<img className="narrow-img" src={EnemyHit} alt="" />
 					<div>
 						<h5>Enemy Health</h5>
 						Finally, I created a health system for enemies that allows them to take a variable amount of damage from the player, and get destroyed when all health has run out. To make hitting an enemy more responsive and satisfying, I had the enemy flicker red when damaged, and I had the amount of damage inflicted be displayed as a particle dropping from the enemy.

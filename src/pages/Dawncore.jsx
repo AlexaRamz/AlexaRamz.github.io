@@ -17,8 +17,7 @@ export default function Dawncore()
 
 			<main className="project-sections">
 				<section>
-
-					<div className="video-container">
+					<div className="project-video">
 						<iframe src={dawncoreData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
@@ -44,7 +43,7 @@ export default function Dawncore()
 						</p>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Programming Contributions</h2>
@@ -66,7 +65,7 @@ export default function Dawncore()
 						</ul>
 					</div>
 				</section>
-				<section>
+				<section className="video-section">
 					<div className="video-container">
 						<iframe src={dawncoreData.enemyJumpVideoEmbed} allow="autoplay"></iframe>
 					</div>

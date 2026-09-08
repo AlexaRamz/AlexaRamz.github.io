@@ -21,7 +21,7 @@ export default function BuildToSpace()
 
 			<main className="project-sections">
 				<section>
-					<div className="video-container">
+					<div className="project-video">
 						<iframe src={buildToSpaceData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
@@ -47,7 +47,7 @@ export default function BuildToSpace()
 						</p>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Programming Contributions</h2>
@@ -88,7 +88,7 @@ export default function BuildToSpace()
 					</div>
 					<img src={BuildToSpaceCharacterCustom} alt="" />
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Team lead Responsibilities</h2>
@@ -100,7 +100,7 @@ export default function BuildToSpace()
 						</ul>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Other Contributions</h2>
@@ -111,7 +111,7 @@ export default function BuildToSpace()
 						</ul>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Background</h2>

@@ -21,7 +21,7 @@ export default function CoffeesBrew()
 
 			<main className="project-sections">
 				<section>
-					<div className="video-container">
+					<div className="project-video">
 						<iframe src={coffeesBrewData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
@@ -44,7 +44,7 @@ export default function CoffeesBrew()
 						</p>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>What I've Accomplished</h2>
@@ -62,7 +62,7 @@ export default function CoffeesBrew()
 					<img src={CoffeesBrewBuilding} alt="" />
 				</section>
 				<section>
-					<div>
+					<div className="image-container">
 						<img src={CoffeesBrewShop} alt="" />
 						<img src={CoffeesBrewCooking} alt="" />
 					</div>
@@ -95,7 +95,7 @@ export default function CoffeesBrew()
 					</div>
 					<img src={CoffeesBrewDialogue} alt="" />
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Background</h2>

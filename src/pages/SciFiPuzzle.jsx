@@ -19,7 +19,7 @@ export default function SciFiPuzzle()
 
 			<main className="project-sections">
 				<section>
-					<div className="video-container">
+					<div className="project-video">
 						<iframe src={scifiPuzzleData.videoEmbed} allow="autoplay"></iframe>
 					</div>
 					<div>
@@ -45,7 +45,7 @@ export default function SciFiPuzzle()
 						</p>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Team lead Responsibilities</h2>
@@ -56,7 +56,7 @@ export default function SciFiPuzzle()
 						</ul>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Programming Contributions</h2>
@@ -67,7 +67,7 @@ export default function SciFiPuzzle()
 						</ul>
 					</div>
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Power Grid System</h2>
@@ -78,7 +78,7 @@ export default function SciFiPuzzle()
 				<section>
 					Implementing these puzzle mechanics required me to create a system that simulates running power through any possible configuration of wires on a grid, making sure to take into account for multiple power sources, forks, and intersections. The task seemed a bit complex at first, but I was able to break it down by modeling a given configuration as a graph, where vertices are wire tiles and edges between vertices show which wires connect to each other. This is stored as a 2D array of class instances, each describing the on/off state and presence of neighbors of its corresponding wire. Essentially, each time the player makes a change in the puzzle, every wire starting from a working power source is traversed in a recursive manner and its state is updated accordingly. Ultimately, this traversal resembles a Depth-first Search algorithm on the graph, which I think is pretty neat.
 				</section>
-				<hr/>
+				<hr />
 				<section>
 					<div>
 						<h2>Background</h2>
